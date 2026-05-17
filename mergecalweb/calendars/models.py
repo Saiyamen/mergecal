@@ -29,7 +29,7 @@ if typing.TYPE_CHECKING:
 logger = logging.getLogger(__name__)
 
 TWELVE_HOURS_IN_SECONDS = 43200
-CACHE_BYPASS_HOURS = 3  # Hours to disable CDN cache after calendar modification
+CACHE_BYPASS_HOURS = 87600  # ~10 years — keep cache-bypass permanently on (always-fresh mode)
 MIN_BYPASS_CACHE_TTL_SECONDS = 30  # Server cache TTL during bypass (30 sec)
 MAX_ERROR_MESSAGE_LENGTH = 200  # Maximum length for error messages shown to users
 
